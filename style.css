@@ -1,15 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 *
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    
 }
 body
 {
-    min-height: 100vh;
-    background: linear-gradient(#b700ff,#0051ff);
+    min-height: 0vh;
+    background: linear-gradient(#0a0096,#57008a);
+    transition: 0.5s;
 }
 header
 {
@@ -129,9 +132,9 @@ section a
 #btn2
 {
     text-decoration: none;
-    display: grid;
+    display: inline-block;
     padding: 10px 35px;
-    border-radius: 80px;
+    border-radius: 15px;
     background: #FFF;
     color: #2b1055;
     font-size: 1.5em;
@@ -154,7 +157,7 @@ section a
     white-space: nowrap;
     font-size: 3vw;
     z-index: 9;
-    transform: translateY(-135px);
+    transform: translateY(-110px);
 }
 #btn3
 {
@@ -385,4 +388,71 @@ input:focus + .slider {
 
 input:checked + .slider:before {
  transform: translateX(1.5em);
+}
+.button-container {
+  transform: translateY(30px);
+  width: 1250px;
+  height: 300px;
+  padding: 197px;
+  background-color: transparent;
+}
+
+.button-container > a {
+  text-decoration: none;
+  padding: 17px 35px;
+  text-align: center;
+  width: 200px;
+  height: 70px;
+  float: left;
+  margin: 7px;
+  border-radius: 20px;
+  background: #FFF;
+  color: #2b1055;
+  font-size: 1.5em;
+  z-index: 9;
+  transform: translateY(-50px);
+}
+img:hover 
+{
+  animation: shake 10.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+
+#text4
+{
+    position: relative;
+    align-items: center;
+    color: #FFF;
+    white-space: nowrap;
+    font-size: 1vw;
+    z-index: 9;
+    transform: translateY(-40px);
+}
+
+#text5
+{
+    position: relative;
+    align-items: center;
+    color: #FFF;
+    white-space: nowrap;
+    font-size: 1vw;
+    z-index: 9;
+    transform: translateY(-40px);
+    font-family: 'Rubik', sans-serif;
 }
